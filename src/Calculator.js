@@ -7,7 +7,7 @@ export class Calculator{
 
 //convert AGE TO SECONDS
   calculateAgeInSeconds(){
-    return "Your age in seconds is: "+this.age*365*24*60*60+" seconds.";
+    return "Your age in seconds is: "+this.age*31536000+" seconds.";
   }
 
 //result DATE DIFFERENCE
@@ -48,8 +48,8 @@ export class Calculator{
 
 //Take returned age from each planet and subtract from averageLifeExpectancy
   calculateYearsLeft(earthAge, mercuryAge, venusAge, marsAge, jupiterAge){
-    const averageLifeExpectancy=79.25;
-    //79.25 is the average life expectency of a US Citizen as of 2018
+    const averageLifeExpectancy=70.5;
+    //70.5 is the average life expectency of a US Citizen
     let finalResult="";
     let earthExpectancy=(averageLifeExpectancy-earthAge);
     console.log(earthExpectancy);
